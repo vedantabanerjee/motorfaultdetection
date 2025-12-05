@@ -38,7 +38,7 @@ The model operates on short fixed-length sequences (sliding windows) and predict
 ### Data Collection
 The data is collected using SmartElex 6 Degrees of Freedom IMU - LSM6DSOX and SeedStudio ESP32C3. They are made into a compact small device which is attached on the motor and it's serial output is logged into CSV using ConsentiumIoT's DataFetcher Library.
 
-<img src="images/device.jpeg" alt="device" width="50%">
+<img src="images/device.jpeg" alt="device" width="30%">
 
 ### Hardware Specs
 #### Microcontroller - ESP32C3
@@ -48,7 +48,7 @@ The data is collected using SmartElex 6 Degrees of Freedom IMU - LSM6DSOX and Se
 -   **Connectivity:**  U.FL antenna connector for enhanced range, UART, I2C, SPI
 -   **I/O:**  11 Digital I/O (PWM), 4 Analog I/O (ADC)
 -   **Power:**  Ultra-low power modes (44μA deep sleep), onboard Li-ion/LiPo battery charge management.
-<img src="images/esp32c3.jpeg" alt="esp32c3" width="50%">
+<img src="images/esp32c3.jpeg" alt="esp32c3" width="30%">
 
 
 #### MEMS IMU - LSM6DSOX
@@ -60,7 +60,7 @@ The data is collected using SmartElex 6 Degrees of Freedom IMU - LSM6DSOX and Se
 -   **Gyroscope Range:**  ±125dps, ±250dps, ±500dps, ±1000dps, ±2000dps (selectable).
 -   **Data Buffer:**  Smart FIFO up to 9KB.
 -   **Interfaces:**  I2C (with selectable address 0x6A/0x6B), SPI, MIPI I3CSM.
-<img src="images/lsm6dso.jpeg" alt="lsm6dso" width="50%">
+<img src="images/lsm6dso.jpeg" alt="lsm6dso" width="30%">
 
 
 #### Induction Motor
@@ -68,7 +68,7 @@ The data is collected using SmartElex 6 Degrees of Freedom IMU - LSM6DSOX and Se
 - **Power input:** 0.37KW (0.5 HP)
 - **Operating Voltage and Frequency:** 230v at 50Hz
 - **Rated RPM:** 2800
-<img src="images/motor.jpeg" alt="motor" width="50%">
+<img src="images/motor.jpeg" alt="motor" width="30%">
 
 
 ### Dataset Description
