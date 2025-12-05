@@ -37,6 +37,7 @@ The model operates on short fixed-length sequences (sliding windows) and predict
 
 ### Data Collection
 The data is collected using SmartElex 6 Degrees of Freedom IMU - LSM6DSOX and SeedStudio ESP32C3. They are made into a compact small device which is attached on the motor and it's serial output is logged into CSV using ConsentiumIoT's DataFetcher Library.
+
 <img src="images/device.jpeg" alt="device" width="50%">
 
 ### Hardware Specs
