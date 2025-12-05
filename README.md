@@ -80,8 +80,7 @@ The data is collected using SmartElex 6 Degrees of Freedom IMU - LSM6DSOX and Se
     -   `datasets/train/motorON_NoFan.csv`        
     -   `datasets/train/motorON_BadFan.csv`
         
--   Test files are similarly organized (e.g. `datasets/test/motorOFF_P3.csv`) — the `_P*` suffix convention indicates **different physical sensor positions** (for example P1, P2, P3). Placeholders below let you add images showing exact sensor mounting positions.
-    
+-   Test files are similarly organized (e.g. `datasets/test/motorOFF_P3.csv`) — the `_P*` suffix convention indicates **different physical sensor positions.** Here are the 3 mounting position from P1 on the left side to P3 on the right side:
 <p align="center">
   <img src="images/p1.jpeg" width="30%" />
   <img src="images/p2.jpeg" width="30%" />
