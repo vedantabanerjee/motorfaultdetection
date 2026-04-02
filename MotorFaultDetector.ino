@@ -214,7 +214,6 @@ void setup() {
     Serial.println("[OK] OLED initialised");
 
     // ── LSM6DSO ───────────────────────────────────────────────────
-    // Try default address; if it fails, hint to check wiring / SA0 pin
     if (!myIMU.begin(IMU_ADDR, Wire)) {
     if (!myIMU.begin(IMU_ADDR == 0x6B ? 0x6A : 0x6B, Wire)) {
         Serial.println("[ERR] LSM6DSO not found on 0x6A or 0x6B!");
@@ -223,12 +222,10 @@ void setup() {
     }
 }
 
-    // ±2g range matches the training data collection range.
-    // If your motor data was collected at a different range, change this.
+    // ±2g range
     myIMU.setAccelRange(2);
 
     // 416 Hz is the nearest supported ODR to the training rate of 445 Hz.
-    // Other valid values: 208, 833 (but 416 Hz is closest to training).
     myIMU.setAccelDataRate(416);
 
     Serial.println("[OK] LSM6DSO — ±2g @ 416 Hz");
